@@ -15,6 +15,7 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseCors(x => { x.AllowAnyOrigin(); });
+app.UseResponseCaching();
 app.UseRouting();
 app.MapControllerRoute(
     name: "default",

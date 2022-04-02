@@ -6,6 +6,7 @@ namespace NautilusNFTSandbox.Controllers;
 
 public class HomeController : Controller
 {
+    [ResponseCache(Duration = 365000000, Location = ResponseCacheLocation.Client)]
     public IActionResult Index([FromQuery]string url, [FromQuery]string height, [FromQuery]string fit, [FromQuery]string overflow)
     {
         ViewBag.url = url;
