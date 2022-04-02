@@ -6,11 +6,12 @@ namespace NautilusNFTSandbox.Controllers;
 
 public class HomeController : Controller
 {
-    public IActionResult Index([FromQuery]string url, [FromQuery]string height, [FromQuery]string fit)
+    public IActionResult Index([FromQuery]string url, [FromQuery]string height, [FromQuery]string fit, [FromQuery]string overflow)
     {
         ViewBag.url = url;
         ViewBag.height = height;
         ViewBag.fit = fit;
+        ViewBag.overflow = overflow;
 
         return View();
     }
