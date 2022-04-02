@@ -1,4 +1,5 @@
 ﻿@{
     var height = ViewBag.height ?? "100%";
+    var fit = ViewBag.fit ?? "cover";
 }
-<img src="@ViewBag.url" style="width:100%;object-fit:cover;overflow:hidden;height:@height">
+<img src="@ViewBag.url" style="width:100%;object-fit:@fit;height:@height">
